@@ -5,7 +5,7 @@
     }
     
     body > header {
-        background-color: #F52EA9;
+        background-color: #863D96;
         padding: 16px 0;
         color: #f5f6fa;
     }
@@ -26,7 +26,22 @@ margin-left: 16px;
 header li a {  
     color: #f5f6fa;
     text-decoration: none;
+    position: relative;
+}
 
+header li a::after{
+    content:" ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg,#CB3A87, #CB3AC1);
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    transition: width 0.5s;
+}
+
+header li a:hover::after{
+    width: 30px;
 }
 
 .container {
@@ -91,10 +106,11 @@ section h2{
 }
 
 #sports {
-    background-color: #F55FEA;
+    background-color: #963D94;
 }
 
 #sports .articles article a {
+    border-radius: 60px;
     background-color: black;
 }
 
@@ -103,6 +119,27 @@ section h2{
 }
 
 #economy .articles article a {
+    border-radius: 60px;
     background-color: black;
 }
+
+#culinary {
+    background-color: #863D96;
+}
+
+#culinary .articles article a{
+    border-radius: 60px;
+    background-color: black;
+}
+
+#technology {
+    background-color: #623D96;
+}
+
+#technology .articles article a{
+    border-radius: 60px;
+    background-color: black;
+    
+}
+
 
